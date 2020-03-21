@@ -71,17 +71,13 @@
 			</ul>
 		</nav>
 	</header>
-	<main  class="page-main page-main--background change-pass">
-	    <form class="change-pass__form form" action="http://localhost:8080/change" method="post">
-	        <legend class="form__legend">Создание нового пароля</legend>
-	        <div class="form__wrap">
-				<input class="form__pass form__pass--first" id="first" type="password" name="password-first" value="" placeholder="Введите пароль" minlength="8" required="required">
-				<label class="visually-hidden" for="first">Введите пароль</label>
-	            <input class="form__pass form__pass--second" id="second" type="password" name="password-second" value="" placeholder="Повторите пароль" minlength="8" required="required">
-				<label class="visually-hidden" >Повторите пароль</label>
-			</div>
-	        <button class="form__button" type="submit" name="button">Создать</button>
-	        </form>
+	<main  class="page-main page-main--background pass-success success">
+		<div class="success__wrap">
+			<h1 class="success__head visually-hidden">Подтверждение создания пароля</h1>
+			<button class="success__button" type="button" name="button"></button>
+			<p class="success__cont success__cont--pass">Пароль успешно создан</p>
+			<p class="success__text">Вернитесь в игру и продолжите ваше путешествие</p>
+		</div>
 	</main>
 	<footer class="page-footer page-footer--other">
 		<ul class="page-footer__list social">
@@ -206,18 +202,7 @@
 		</section>
 	</template>
     <script type="text/javascript">
-        var form = document.querySelector('.form');
-        var button = document.querySelector('.form__button');
-        var inputFirst = document.querySelector('.form__pass--first');
-        var inputSecond = document.querySelector('.form__pass--second');
 
-        form.addEventListener('submit', function (evt) {
-            if (inputSecond.value != inputFirst.value) {
-                evt.preventDefault();
-                alert("Passwords do not match");
-                inputSecond.value = '';
-            }
-        });
     </script>
 	<script src="js/script.js"></script>
 </body>
