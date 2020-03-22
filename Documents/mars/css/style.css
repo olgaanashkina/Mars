@@ -276,12 +276,12 @@ ul {
     opacity: 0.7;
 }
 .about-game {
-    width: 242px;
+    width: 250px;
     margin: 0 auto;
     padding-top: 20px;
 }
 .about-game__link {
-    width: 242px;
+    width: 250px;
     margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
@@ -291,7 +291,7 @@ ul {
     font-family: "Russo One", sans-serif;
     font-size: 16px;
     line-height: 35px;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     color: #ffca27;
     text-align: center;
     text-decoration: underline;
@@ -372,18 +372,19 @@ ul {
         height: 53px;
     }
     .about-game {
-        width: 290px;
+        width: 310px;
         padding-top: 60px;
     }
     .about-game__link {
-        width: 290px;
+        width: 310px;
         min-height: 25px;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     .about-game__text {
         margin: 0;
+        padding-left: 10px;
     }
     .about-game__img {
         margin-top: 5px;
@@ -969,7 +970,9 @@ input[type="search"]::placeholder { color: rgba(255, 255, 255, 0.5); }
 }
 .page-video__myvideo:active {
     border: none;
+    outline: none;
 }
+
 @media (min-width: 768px) {
     .page-video {
         width: 768px;
